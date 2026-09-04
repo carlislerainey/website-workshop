@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - guide.qmd
+    - slides.qmd
+  post-render:
+    - copy-example.R
+  resources:
+    - checklist/checklist.pdf
+    - "!simple/"
+    - "!inputs/"
+    - "!tools/"
+
+website:
+  title: "Build Your First Academic Website"
+  site-url: https://www.carlislerainey.com/website-workshop
+  navbar:
+    left:
+      - text: Guide
+        file: guide.qmd
+      - text: Checklist
+        href: checklist/checklist.pdf
+      - text: Slides
+        href: slides.html
+      - text: Example
+        href: example/
+
+format:
+  html:
+    theme: zephyr
+    link-external-newwindow: true

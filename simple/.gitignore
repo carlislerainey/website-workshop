@@ -1,0 +1,6 @@
+/.quarto/
+.DS_Store
+
+# Quarto leaves these next to each page on render (they hold downloaded remote
+# media). The finished site is in docs/; these are intermediate artifacts.
+*_files/

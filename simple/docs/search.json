@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Your Name",
+    "section": "",
+    "text": "I am a Ph.D. student in the Department of Political Science at Florida State University. I study American politics and political behavior, with a focus on how citizens form and change their opinions. I teach courses on American and comparative politics. My dissertation, “Title of the Dissertation,” asks how a question of interest shapes an outcome of interest.\nBefore starting my Ph.D. at FSU, I earned a B.A. in political science from Institution in 2022."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I teach courses in American politics and research methods."
+  },
+  {
+    "objectID": "teaching.html#instructor-of-record",
+    "href": "teaching.html#instructor-of-record",
+    "title": "Teaching",
+    "section": "Instructor of Record",
+    "text": "Instructor of Record\nPOS 2041: American National Government, Florida State University, Fall 2026."
+  },
+  {
+    "objectID": "teaching.html#teaching-assistant",
+    "href": "teaching.html#teaching-assistant",
+    "title": "Teaching",
+    "section": "Teaching Assistant",
+    "text": "Teaching Assistant\nPOS 5736: Research Design (graduate), Florida State University, 2025–2026.\nPOS 2041: American National Government, Florida State University, 2024–2025."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research examines how citizens form and change their political opinions. A complete list is on my CV."
+  },
+  {
+    "objectID": "research.html#peer-reviewed-articles",
+    "href": "research.html#peer-reviewed-articles",
+    "title": "Research",
+    "section": "Peer-Reviewed Articles",
+    "text": "Peer-Reviewed Articles\nYour Name and Coauthor Name. 2026. “Title of the Article.” Journal of Politics 88 (2): 431–44. doi: 10.1086/000000\nCoauthor Name and Your Name. 2025. “Another Title.” Political Analysis 33 (1): 1–18. doi: 10.1017/pan.0000.00"
+  },
+  {
+    "objectID": "research.html#book-chapters",
+    "href": "research.html#book-chapters",
+    "title": "Research",
+    "section": "Book Chapters",
+    "text": "Book Chapters\nYour Name. Forthcoming. “A Chapter Title.” In An Edited Volume, ed. Editor Name. Cambridge: Cambridge University Press."
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\n“A Paper With a Revise and Resubmit.” Revise and resubmit, Political Behavior. PDF\n“A Paper Under Review.” Under review. Preprint"
+  },
+  {
+    "objectID": "research.html#early-projects",
+    "href": "research.html#early-projects",
+    "title": "Research",
+    "section": "Early Projects",
+    "text": "Early Projects\n“A Paper Being Written.”"
+  }
+]

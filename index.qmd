@@ -1,0 +1,49 @@
+---
+title: "Build Your First Academic Website"
+subtitle: "Quarto, RStudio, and GitHub Pages"
+css: styles.css
+---
+
+A workshop for PhD students.
+
+**Goal:** in 90 minutes, build a home page with your photo and bio, a research page, a teaching page, and your CV, and publish it at `USERNAME.github.io`.
+
+::: {.grid .previews}
+
+::: {.g-col-12 .g-col-md-6}
+[![](previews/guide.png){.preview-shot fig-alt="The first page of the guide, showing the title and the opening section."}](guide.qmd)
+
+### [The guide](guide.qmd)
+
+To follow during the workshop.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+[![](previews/checklist.png){.preview-shot fig-alt="The top of the one-page checklist, showing the title and the first sections."}](checklist/checklist.pdf)
+
+### [The checklist](checklist/checklist.pdf)
+
+One page. Print it and tick off the steps as you go.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+[![](previews/example.png){.preview-shot fig-alt="The home page of the example site, showing a photo, a bio, and Email, CV, Google Scholar, and ORCID buttons."}](example/)
+
+### [The example site](example/)
+
+The site the guide builds. Click around.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+[![](previews/slides.png){.preview-shot fig-alt="The title slide of the workshop slide deck."}](slides.html)
+
+### [The slides](slides.html)
+
+To put on the screen during the workshop.
+:::
+
+:::
+
+::: {.suggest}
+**Suggestions and questions.** If something here is wrong, unclear, or missing, [open an issue](https://github.com/carlislerainey/website-workshop/issues) on GitHub. Ideas for improving the guide are welcome too. You'll need the GitHub account you set up for the workshop.
+:::

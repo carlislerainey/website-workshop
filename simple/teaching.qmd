@@ -1,0 +1,18 @@
+---
+title: "Teaching"
+---
+
+<!-- One line per course. To link a PDF of a syllabus, put the PDF in this folder and
+     write [Syllabus](pos2041-syllabus.pdf); Quarto copies linked files into docs/. -->
+
+I teach courses in American politics and research methods.
+
+## Instructor of Record
+
+POS 2041: American National Government, Florida State University, Fall 2026.
+
+## Teaching Assistant
+
+POS 5736: Research Design (graduate), Florida State University, 2025–2026.
+
+POS 2041: American National Government, Florida State University, 2024–2025.

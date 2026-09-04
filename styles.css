@@ -1,0 +1,59 @@
+/* Homepage preview cards */
+.previews { margin-top: 2rem; row-gap: 2rem; }
+
+/* Quarto wraps the image in a figure; strip its default margin/centering
+   so the card reads as one block with the heading below it. */
+.previews figure { margin: 0; }
+.previews figure > p { margin: 0; }
+
+.previews a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.preview-shot {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.previews a:hover .preview-shot {
+  border-color: #adb5bd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+  transform: translateY(-2px);
+}
+
+.previews h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.previews h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Suppress Quarto's hover anchor-link (the paragraph mark) on these
+   headings only -- it looks out of place on a card heading. */
+.previews h3 a.anchorjs-link {
+  display: none !important;
+}
+
+.previews p {
+  margin-bottom: 0;
+  color: #495057;
+}
+
+/* Closing note under the preview cards */
+.suggest {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #dee2e6;
+  color: #495057;
+}
+.suggest p { margin-bottom: 0; }

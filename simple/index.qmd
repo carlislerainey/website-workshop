@@ -1,0 +1,32 @@
+---
+title: "Your Name"
+image: headshot.jpg          # Your photo. Square images look best. Replace the file; keep the name.
+image-alt: "Your Name"       # What a screen reader says for the photo. Use your name here too.
+about:
+  template: jolla            # Centered: photo, name, bio, buttons. Three things to try:
+                             #   - template: trestles   (photo on the left, bio on the right)
+                             #   - template: solana     (bio on the left, photo on the right)
+                             #   - image-shape: rectangle   (or rounded; on its own line at this indent)
+                             # All home-page options, with pictures:
+                             # https://quarto.org/docs/websites/website-about.html
+  links:                     # The buttons under the bio. Try adding github, linkedin,
+    - icon: envelope         # or twitter-x. Every icon name: https://icons.getbootstrap.com/
+      text: Email
+      href: mailto:you@fsu.edu
+    - icon: file-earmark-pdf
+      text: CV
+      href: cv.pdf
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=XXXXXXXXXXXX
+    - icon: person-vcard     # There is no ORCID icon in the set; use an ID card.
+      text: ORCID
+      href: https://orcid.org/0000-0000-0000-0000
+---
+
+<!-- Everything below the front matter is the bio. Keep this short; two or three short paragraphs
+     is plenty. Say who you are, what you study, and what you teach. Maybe add one sentence on your dissertation. -->
+
+I am a Ph.D. student in the Department of Political Science at Florida State University. I study American politics and political behavior, with a focus on how citizens form and change their opinions. I teach courses on American and comparative politics. My dissertation, "Title of the Dissertation," asks how a question of interest shapes an outcome of interest.
+
+Before starting my Ph.D. at FSU, I earned a B.A. in political science from Institution in 2022.

@@ -1,0 +1,27 @@
+---
+title: "Research"
+---
+
+<!-- One paragraph per paper, newest (top) to oldest (bottom). Probably use a standard APSA style. Include a DOI and hyperlink for all published papers. If you have polished working papers, include links to those as well. -->
+
+My research examines how citizens form and change their political opinions. A complete list is on my [CV](cv.pdf).
+
+## Peer-Reviewed Articles
+
+Your Name and Coauthor Name. 2026. "Title of the Article." *Journal of Politics* 88 (2): 431–44. [doi: 10.1086/000000](https://doi.org/10.1086/000000)
+
+Coauthor Name and Your Name. 2025. "Another Title." *Political Analysis* 33 (1): 1–18. [doi: 10.1017/pan.0000.00](https://doi.org/10.1017/pan.0000.00)
+
+## Book Chapters
+
+Your Name. Forthcoming. "A Chapter Title." In *An Edited Volume*, ed. Editor Name. Cambridge: Cambridge University Press.
+
+## Working Papers
+
+"A Paper With a Revise and Resubmit." Revise and resubmit, *Political Behavior*. [PDF](https://example.com/papers/paper-title.pdf)
+
+"A Paper Under Review." Under review. [Preprint](https://doi.org/10.31235/osf.io/00000)
+
+## Early Projects
+
+"A Paper Being Written." 

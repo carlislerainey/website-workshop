@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Carlisle Rainey">
+
+<title>Build Your First Academic Website</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fb111ea82d72e5bd18f836ed95d90a79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Build Your First Academic Website</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./guide.html" aria-current="page"> 
+<span class="menu-text">Guide</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./checklist/checklist.pdf"> 
+<span class="menu-text">Checklist</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./slides.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./example/"> 
+<span class="menu-text">Example</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#what-youll-build" id="toc-what-youll-build" class="nav-link active" data-scroll-target="#what-youll-build"><span class="header-section-number">1</span> What you’ll build</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">2</span> Examples</a></li>
+  <li><a href="#before-the-workshop" id="toc-before-the-workshop" class="nav-link" data-scroll-target="#before-the-workshop"><span class="header-section-number">3</span> Before the workshop</a></li>
+  <li><a href="#how-this-works" id="toc-how-this-works" class="nav-link" data-scroll-target="#how-this-works"><span class="header-section-number">4</span> How this works</a></li>
+  <li><a href="#make-the-project-in-rstudio" id="toc-make-the-project-in-rstudio" class="nav-link" data-scroll-target="#make-the-project-in-rstudio"><span class="header-section-number">5</span> Make the project in RStudio</a></li>
+  <li><a href="#render-the-site-quarto-gave-you" id="toc-render-the-site-quarto-gave-you" class="nav-link" data-scroll-target="#render-the-site-quarto-gave-you"><span class="header-section-number">6</span> Render the site Quarto gave you</a></li>
+  <li><a href="#point-your-site-at-the-docs-folder" id="toc-point-your-site-at-the-docs-folder" class="nav-link" data-scroll-target="#point-your-site-at-the-docs-folder"><span class="header-section-number">7</span> Point your site at the docs folder</a></li>
+  <li><a href="#build-your-three-pages" id="toc-build-your-three-pages" class="nav-link" data-scroll-target="#build-your-three-pages"><span class="header-section-number">8</span> Build your three pages</a></li>
+  <li><a href="#add-your-photo-and-your-cv" id="toc-add-your-photo-and-your-cv" class="nav-link" data-scroll-target="#add-your-photo-and-your-cv"><span class="header-section-number">9</span> Add your photo and your CV</a></li>
+  <li><a href="#add-a-.nojekyll-file" id="toc-add-a-.nojekyll-file" class="nav-link" data-scroll-target="#add-a-.nojekyll-file"><span class="header-section-number">10</span> Add a .nojekyll file</a></li>
+  <li><a href="#check-your-site-before-you-publish" id="toc-check-your-site-before-you-publish" class="nav-link" data-scroll-target="#check-your-site-before-you-publish"><span class="header-section-number">11</span> Check your site before you publish</a></li>
+  <li><a href="#rearrange-your-home-page" id="toc-rearrange-your-home-page" class="nav-link" data-scroll-target="#rearrange-your-home-page"><span class="header-section-number">12</span> Rearrange your home page</a></li>
+  <li><a href="#pick-a-theme" id="toc-pick-a-theme" class="nav-link" data-scroll-target="#pick-a-theme"><span class="header-section-number">13</span> Pick a theme</a></li>
+  <li><a href="#publish-your-site-with-github-desktop" id="toc-publish-your-site-with-github-desktop" class="nav-link" data-scroll-target="#publish-your-site-with-github-desktop"><span class="header-section-number">14</span> Publish your site with GitHub Desktop</a></li>
+  <li><a href="#turn-on-github-pages" id="toc-turn-on-github-pages" class="nav-link" data-scroll-target="#turn-on-github-pages"><span class="header-section-number">15</span> Turn on GitHub Pages</a></li>
+  <li><a href="#updating-your-site" id="toc-updating-your-site" class="nav-link" data-scroll-target="#updating-your-site"><span class="header-section-number">16</span> Updating your site</a></li>
+  <li><a href="#extension-your-own-web-address" id="toc-extension-your-own-web-address" class="nav-link" data-scroll-target="#extension-your-own-web-address"><span class="header-section-number">17</span> Extension: your own web address</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Build Your First Academic Website</h1>
+<p class="subtitle lead">Quarto, RStudio, and GitHub Pages</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Carlisle Rainey </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+How I made this guide
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I built this guide with a lot of help from Claude Code. I walked Claude Code through how I recommend using Quarto to build an academic website, and we built a simple website together. Then Claude Code helped me draft the step-by-step instructions, then rewrite and verify them.</p>
+</div>
+</div>
+<section id="what-youll-build" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="what-youll-build"><span class="header-section-number">1</span> What you’ll build</h2>
+<p>Follow this guide to build your first academic website:</p>
+<ul>
+<li>a home page with your photo and a short bio</li>
+<li>a research page</li>
+<li>a teaching page</li>
+<li>a link to your CV</li>
+</ul>
+<p>Your website will be at <code>https://USERNAME.github.io</code>. There’s no payment required unless you want a custom domain name (see the extension at the end).</p>
+<p><code>USERNAME</code> is a placeholder for your own GitHub username. My <code>USERNAME</code> is <code>carlislerainey</code>, so my repository is called <code>carlislerainey.github.io</code> and my site is at <code>https://carlislerainey.github.io</code>. Put your <code>USERNAME</code> wherever you see the placeholder.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/home-jolla.png" class="img-fluid figure-img" alt="A centered academic home page: a round headshot, the name Your Name, a short bio, and a row of buttons labeled Email, CV, Google Scholar, and ORCID."></p>
+<figcaption>The home page you are about to build.</figcaption>
+</figure>
+</div>
+</section>
+<section id="examples" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="examples"><span class="header-section-number">2</span> Examples</h2>
+<p>Have a look at the sites below. These are made using a process similar to the one described in this guide.</p>
+<p>These three are pretty close to what you’ll have after you finish this guide:</p>
+<ul>
+<li><a href="https://artur-baranov.github.io/">Artur Baranov</a>, a PhD candidate at Northwestern, uses <code>jolla</code>, the centered layout we start from. <a href="https://github.com/artur-baranov/artur-baranov.github.io">Source</a> is on GitHub.</li>
+<li><a href="https://marandaljoyce.github.io/">Maranda Joyce</a>, a PhD candidate at Rice, uses <code>trestles</code> and one of Quarto’s dark themes. <a href="https://github.com/marandaljoyce/marandaljoyce.github.io">Source</a> is on GitHub.</li>
+<li><a href="https://tylerrongxuanchen.github.io/">Tyler Rongxuan Chen</a>, a PhD candidate at Michigan, uses <code>solana</code> and almost the same row of buttons you will make. <a href="https://github.com/tylerrongxuanchen/tylerrongxuanchen.github.io">Source</a> is on GitHub.</li>
+</ul>
+<p>These two have a bit of customization.</p>
+<ul>
+<li><a href="https://charlottekuberka.github.io/">Charlotte Kuberka</a>, a PhD candidate at LSE, kept <code>trestles</code> and restyled it to match her CV. <a href="https://github.com/charlottekuberka/charlottekuberka.github.io">Source</a> is on GitHub.</li>
+<li><a href="https://fghjorth.github.io/">Frederik Hjorth</a>, a professor at Copenhagen, has a page each for his papers, his teaching, and his data. <a href="https://github.com/fghjorth/fghjorth.github.io">Source</a> is on GitHub.</li>
+</ul>
+<p>Four more sites show what a Quarto site can grow into.</p>
+<ul>
+<li><a href="https://chadhazlett.com/">Chad Hazlett</a>, a professor at UCLA, adds a publications page and a software page to the three pages you will build. <a href="https://github.com/chadhazlett/chadhazlett.github.io">Source</a> is on GitHub.</li>
+<li><a href="https://christophertkenny.com/">Christopher Kenny</a>, a postdoc at Princeton, adds software, a blog, and a page for the Quarto extensions he writes. <a href="https://github.com/christopherkenny/christopherkenny.github.io">Source</a> is on GitHub.</li>
+<li><a href="https://fsolt.org/">Frederick Solt</a>, a professor at Iowa, has about 180 pages: a blog, software, and a site for each of his data projects. <a href="https://github.com/fsolt/fsolt.github.io">Source</a> is on GitHub.</li>
+<li><a href="https://robjhyndman.com/">Rob Hyndman</a>, a professor of statistics at Monash, has nearly 900 pages: a blog, publications, software, seminars, and teaching. <a href="https://github.com/robjhyndman/robjhyndman.com">Source</a> is on GitHub, though he hosts the site on his own server.</li>
+</ul>
+</section>
+<section id="before-the-workshop" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="before-the-workshop"><span class="header-section-number">3</span> Before the workshop</h2>
+<p>Here’s what you should do <em>before</em> the workshop. Most of you should already have most of these.</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox"><strong>A GitHub account.</strong> Sign up free at <a href="https://github.com/signup">github.com/signup</a>. Choose the username carefully, because it becomes your web address. <code>johnasmith</code> gives the site <code>johnasmith.github.io</code>. Use your name, all lowercase, nothing tied to FSU, and no gamer tags. <a href="https://happygitwithr.com/github-acct">Happy Git with R</a> has good advice on picking one. If your existing username would look odd on a CV, <a href="https://docs.github.com/en/account-and-profile/how-tos/account-management/changing-your-username">change it</a> before the workshop.</label></p></li>
+<li><p><label><input type="checkbox"><strong>GitHub Desktop</strong>. Install from <a href="https://desktop.github.com">desktop.github.com</a>. Make sure to get <a href="https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop">signed in</a> to your account (<strong>GitHub Desktop → Settings → Accounts</strong> on a Mac, <strong>File → Options → Accounts</strong> on Windows).</label></p></li>
+<li><p><label><input type="checkbox"><strong>R and RStudio</strong>. Install the latest version from <a href="https://posit.co/download/rstudio-desktop/">posit.co</a>. Any version since 2025 or so works, too. Quarto comes built into RStudio. Check <strong>RStudio → About RStudio</strong> if you aren’t sure.</label></p></li>
+<li><p><label><input type="checkbox"><strong>A professional headshot</strong>, cropped square.</label></p></li>
+<li><p><label><input type="checkbox"><strong>Your CV</strong> as a PDF.</label></p></li>
+<li><p><label><input type="checkbox"><strong>An ORCID iD</strong>. Register for free at <a href="https://orcid.org/register">orcid.org/register</a>.</label></p></li>
+<li><p><label><input type="checkbox"><strong>Your Google Scholar profile URL</strong>. Only if you have <a href="https://scholar.google.com/intl/en/scholar/citations.html">a profile</a>. No profile yet is fine.</label></p></li>
+</ul>
+</section>
+<section id="how-this-works" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="how-this-works"><span class="header-section-number">4</span> How this works</h2>
+<ol type="1">
+<li>We write our pages as plain text files.</li>
+<li>We use <a href="https://quarto.org/docs/websites/">Quarto</a> to turn them into a website in a folder called <code>docs/</code>, which makes <a href="https://quarto.org/docs/publishing/github-pages.html">GitHub Pages</a> simple.</li>
+<li>We use GitHub Desktop to send that folder to GitHub (and GitHub Pages serves it to the world).</li>
+</ol>
+</section>
+<section id="make-the-project-in-rstudio" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="make-the-project-in-rstudio"><span class="header-section-number">5</span> Make the project in RStudio</h2>
+<p><em>Done by 2:15.</em></p>
+<p>In RStudio, click <strong>File → New Project… → New Directory → Quarto Website</strong>. Fill in the pane that follows.</p>
+<ul>
+<li><strong>Directory name:</strong> <code>USERNAME.github.io</code>, all lowercase. This exact name puts your site at <code>https://USERNAME.github.io</code>. If you use any other name, your site will be at <code>USERNAME.github.io/that-other-name/</code>.</li>
+<li><strong>Create project as subdirectory of:</strong> somewhere you will find it again. I keep my website in <code>Dropbox/</code>, but git and Dropbox don’t always play nicely.</li>
+<li><strong>Engine:</strong> leave it as it is.</li>
+<li>Check <strong>Create a git repository</strong>. You’ll need the git repo for GitHub Desktop later.</li>
+<li>Leave <strong>Use renv with this project</strong> unchecked.</li>
+</ul>
+<p>Click <strong>Create Project</strong>. RStudio reopens with your new project loaded.</p>
+</section>
+<section id="render-the-site-quarto-gave-you" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="render-the-site-quarto-gave-you"><span class="header-section-number">6</span> Render the site Quarto gave you</h2>
+<p><em>Done by 2:20.</em></p>
+<p>Quarto has already added a working website. Before we change anything, look at what it added.</p>
+<p>In the <strong>Files</strong> pane (bottom right) you will find four files:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>_quarto.yml</code></td>
+<td>The settings for your whole site: title, navigation bar, theme.</td>
+</tr>
+<tr class="even">
+<td><code>index.qmd</code></td>
+<td>Your home page.</td>
+</tr>
+<tr class="odd">
+<td><code>about.qmd</code></td>
+<td>A second page, included as an example.</td>
+</tr>
+<tr class="even">
+<td><code>styles.css</code></td>
+<td>An empty file for custom styling.</td>
+</tr>
+</tbody>
+</table>
+<p>Render your website. Go to the <strong>Build</strong> tab (top right) and click <strong>Render Website</strong>. Your website will appear in the Viewer pane.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/rstudio-render-button.png" class="img-fluid figure-img" alt="RStudio's Build tab, top right, with the Render Website button."></p>
+<figcaption>The Build tab’s Render Website button.</figcaption>
+</figure>
+</div>
+<p>You will also see a new folder in the Files pane called <code>_site</code>. That’s where Quarto put the finished website. It’s the default spot; you will move it to a new location in the next section.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/skeleton-home.png" class="img-fluid figure-img" alt="The default Quarto website: a plain white page titled USERNAME.github.io with Home and About links in the navbar."></p>
+<figcaption>The site Quarto starts you with.</figcaption>
+</figure>
+</div>
+</section>
+<section id="point-your-site-at-the-docs-folder" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="point-your-site-at-the-docs-folder"><span class="header-section-number">7</span> Point your site at the docs folder</h2>
+<p><em>Done by 2:30.</em></p>
+<p>Open <code>_quarto.yml</code> from the Files pane, select everything in it, delete it, and replace it with this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The whole site is configured in this one file. The pages are the .qmd files</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># next to it; the rendered site goes in docs/.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Everything this file accepts: https://quarto.org/docs/reference/projects/websites.html</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span><span class="co">        # GitHub Pages can serve a site straight from docs/.</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span><span class="co">      # Shown at the left end of the navbar and in the browser tab.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> research.qmd</span><span class="co">      # Link text comes from the page's own title.</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> teaching.qmd</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> CV</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> cv.pdf</span><span class="co">      # The CV is a PDF, not a page. Replace the file; keep the name.</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  # Three additions you will probably want, in the order people usually want them:</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  #   - Another page (talks, software, data). Create talks.qmd with a title: line at</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">  #     the top, then add "- talks.qmd" to the navbar list above. A blog is one step</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">  #     more, a page that lists posts: https://quarto.org/docs/websites/website-blog.html</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">  #   - Link previews. When someone shares your site on Bluesky or in Slack, show a</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">  #     card with your name and photo instead of a bare URL: add</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">  #     "site-url: https://USERNAME.github.io" and "open-graph: true" at this indent.</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">  #     (site-url also gives search engines a sitemap.)</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">  #   - Visitor counts, if you want them: create a free Google Analytics property,</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">  #     then add its ID here as google-analytics: "G-XXXXXXXXXX", at this indent.</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">  # More additions like these: https://quarto.org/docs/websites/website-tools.html</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span><span class="co">          # Quarto's default look. Try flatly (dark navbar), litera (serif</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">                          # text), or sandstone. Change the word, re-render. All 25 themes,</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co">                          # with pictures: https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span><span class="co">       # Extra styling on top of the theme. The file is empty; your own</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">                          # CSS rules go there if a theme setting ever isn't enough.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We changed five things away from the Quarto default:</p>
+<ol type="1">
+<li><strong><code>output-dir: docs</code></strong> sends the finished site to <code>docs/</code> instead of <code>_site/</code>. GitHub Pages will serve a folder named <code>docs</code> (but not one called <code>_site/</code>).</li>
+<li><strong><code>title:</code></strong> is your name.</li>
+<li><strong>The navbar</strong> lists Research, Teaching, and your CV instead of the example “about” page.</li>
+<li><strong><code>theme: cosmo</code></strong> replaces a two-item list. The <code>brand</code> entry it came with uses a <code>_brand.yml</code> file of custom colors and fonts, which you don’t have.</li>
+<li><strong><code>toc: true</code></strong> is deleted, because a table of contents on a webpage is usually clutter.</li>
+</ol>
+<p><code>css: styles.css</code> stays. The file is empty and we won’t add anything today. Your own CSS rules can go there later.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>YAML is particular about spaces. The spaces create the indentation that gives the file its structure. Keep the spaces exactly as they appear above. Use spaces rather than tabs.</p>
+</div>
+</div>
+<p>Delete the <code>_site</code> folder you made a moment ago. Check the box beside it in the Files pane and click <strong>Delete</strong>. We won’t need it again.</p>
+</section>
+<section id="build-your-three-pages" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="build-your-three-pages"><span class="header-section-number">8</span> Build your three pages</h2>
+<p><em>Done by 2:50.</em></p>
+<p>Start by deleting the example page we don’t need. Check <code>about.qmd</code> in the Files pane, then click <strong>Delete</strong>.</p>
+<p><strong>Your home page.</strong> Open <code>index.qmd</code>, select everything, and replace it with Quarto syntax below. Put in your own name, bio, email address, Scholar URL, and ORCID iD:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> headshot.jpg</span><span class="co">          # Your photo. Square images look best. Replace the file; keep the name.</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">image-alt</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span><span class="co">       # What a screen reader says for the photo. Use your name here too.</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> jolla</span><span class="co">            # Centered: photo, name, bio, buttons. Three things to try:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">                             #   - template: trestles   (photo on the left, bio on the right)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">                             #   - template: solana     (bio on the left, photo on the right)</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">                             #   - image-shape: rectangle   (or rounded; on its own line at this indent)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">                             # All home-page options, with pictures:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">                             # https://quarto.org/docs/websites/website-about.html</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span><span class="co">                     # The buttons under the bio. Try adding github, linkedin,</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> envelope</span><span class="co">         # or twitter-x. Every icon name: https://icons.getbootstrap.com/</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Email</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> mailto:you@fsu.edu</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> file-earmark-pdf</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> CV</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> cv.pdf</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Google Scholar</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://scholar.google.com/citations?user=XXXXXXXXXXXX</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> person-vcard</span><span class="co">     # There is no ORCID icon in the set; use an ID card.</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> ORCID</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://orcid.org/0000-0000-0000-0000</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="at">&lt;!-- Everything below the front matter is the bio. Keep this short; two or three short paragraphs</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="at">     is plenty. Say who you are, what you study, and what you teach. Maybe add one sentence on your dissertation. --&gt;</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="at">I am a Ph.D. student in the Department of Political Science at Florida State University. I study American politics and political behavior, with a focus on how citizens form and change their opinions. I teach courses on American and comparative politics. My dissertation, "Title of the Dissertation," asks how a question of interest shapes an outcome of interest.</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="at">Before starting my Ph.D. at FSU, I earned a B.A. in political science from Institution in 2022.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you don’t have a Google Scholar profile yet, delete its three lines. Google Scholar is only important once you accumulate citations.</p>
+<pre><code>    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=XXXXXXXXXXXX</code></pre>
+<p>To add another button (e.g., GitHub, LinkedIn), copy the three-line pattern and pick an <a href="https://icons.getbootstrap.com/">icon name</a>.</p>
+<p><strong>Your research page.</strong> Click <strong>File → New File → Text File</strong>, paste the block below, then choose <strong>File → Save As…</strong> and name it exactly <code>research.qmd</code>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Research"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- One paragraph per paper, newest (top) to oldest (bottom). Probably use a standard APSA style. Include a DOI and hyperlink for all published papers. If you have polished working papers, include links to those as well. --&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>My research examines how citizens form and change their political opinions. A complete list is on my <span class="co">[</span><span class="ot">CV</span><span class="co">](cv.pdf)</span>.</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Peer-Reviewed Articles</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>Your Name and Coauthor Name. 2026. "Title of the Article." *Journal of Politics* 88 (2): 431–44. <span class="co">[</span><span class="ot">doi: 10.1086/000000</span><span class="co">](https://doi.org/10.1086/000000)</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>Coauthor Name and Your Name. 2025. "Another Title." *Political Analysis* 33 (1): 1–18. <span class="co">[</span><span class="ot">doi: 10.1017/pan.0000.00</span><span class="co">](https://doi.org/10.1017/pan.0000.00)</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Book Chapters</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>Your Name. Forthcoming. "A Chapter Title." In *An Edited Volume*, ed. Editor Name. Cambridge: Cambridge University Press.</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working Papers</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>"A Paper With a Revise and Resubmit." Revise and resubmit, *Political Behavior*. <span class="co">[</span><span class="ot">PDF</span><span class="co">](https://example.com/papers/paper-title.pdf)</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>"A Paper Under Review." Under review. <span class="co">[</span><span class="ot">Preprint</span><span class="co">](https://doi.org/10.31235/osf.io/00000)</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Early Projects</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>"A Paper Being Written." </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace the placeholder material with your own.</p>
+<p><strong>Your teaching page.</strong> Click <strong>File → New File → Text File</strong>, paste the block below, then choose <strong>File → Save As…</strong> and name it exactly <code>teaching.qmd</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Teaching"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- One line per course. To link a PDF of a syllabus, put the PDF in this folder and</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">     write [Syllabus](pos2041-syllabus.pdf); Quarto copies linked files into docs/. --&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>I teach courses in American politics and research methods.</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Instructor of Record</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>POS 2041: American National Government, Florida State University, Fall 2026.</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Teaching Assistant</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>POS 5736: Research Design (graduate), Florida State University, 2025–2026.</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>POS 2041: American National Government, Florida State University, 2024–2025.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace the placeholder material with your own.</p>
+<p>The rendered research page looks like this, with the sample content in it:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/research-page.png" class="img-fluid figure-img" alt="The rendered research page: a navbar across the top, then headings for Peer-Reviewed Articles, Book Chapters, Working Papers, and Early Projects, each with sample citations."></p>
+<figcaption>The research page with the sample content.</figcaption>
+</figure>
+</div>
+</section>
+<section id="add-your-photo-and-your-cv" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="add-your-photo-and-your-cv"><span class="header-section-number">9</span> Add your photo and your CV</h2>
+<p><em>Done by 2:55.</em></p>
+<p>Your headshot and your CV are files rather than text. Find them in Finder (on a Mac) or File Explorer (on Windows). Right-click and copy these files (together or one at a time). In RStudio, go to the Files pane and choose <strong>More → Show Folder in New Window</strong>. You’ll see your project folder open in a new window, with <code>_quarto.yml</code> and your <code>.qmd</code> files already in it.</p>
+<p>Paste both files in. Rename them exactly:</p>
+<ul>
+<li><code>headshot.jpg</code></li>
+<li><code>cv.pdf</code></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Any PDF works the same way
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A working paper, a syllabus, and conference slides would work the same way. Drop the file into the project folder, link it from any page (e.g., <code>[PDF](smith-turnout-2026.pdf)</code> on your research page), and render. Quarto copies every file your pages link to into <code>docs/</code>, so the link will work on the live site with no upload step.</p>
+</div>
+</div>
+</section>
+<section id="add-a-.nojekyll-file" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="add-a-.nojekyll-file"><span class="header-section-number">10</span> Add a .nojekyll file</h2>
+<p>Click into the <strong>Console</strong> at the bottom left and run:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.create</span>(<span class="st">".nojekyll"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>It prints <code>TRUE</code> and creates an empty file.</p>
+<p>Without this strange file, GitHub Pages will run your folder through a blog engine called Jekyll. We don’t want to do that because we’re rendering locally. The empty <code>.nojekyll</code> file turns that off. Quarto’s documentation recommends this.</p>
+</section>
+<section id="check-your-site-before-you-publish" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="check-your-site-before-you-publish"><span class="header-section-number">11</span> Check your site before you publish</h2>
+<p><em>Done by 3:00.</em></p>
+<p>Go to <strong>Build → Render Website</strong> once more.</p>
+<p>Then click the arrow at the top of the Viewer pane to open your site in a real browser. Before we publish it to GitHub, click through everything in the navigation bar:</p>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Home</strong> shows your photo, your bio, and four working buttons.</label></li>
+<li><label><input type="checkbox"><strong>Research</strong> and <strong>Teaching</strong> show your own content.</label></li>
+<li><label><input type="checkbox"><strong>CV</strong> opens your PDF.</label></li>
+</ul>
+<p>Fix anything broken.</p>
+</section>
+<section id="rearrange-your-home-page" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="rearrange-your-home-page"><span class="header-section-number">12</span> Rearrange your home page</h2>
+<p><em>Done by 3:05.</em></p>
+<p>Quarto has five layout templates that you can use for your homepage (i.e., <code>index.qmd</code>). You can change it with the <code>template:</code> option.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layout</th>
+<th>Arrangement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>jolla</code></td>
+<td>Photo at the top, centered, with your name, bio, and buttons below it.</td>
+</tr>
+<tr class="even">
+<td><code>trestles</code></td>
+<td>Photo and buttons in a left column, bio on the right.</td>
+</tr>
+<tr class="odd">
+<td><code>solana</code></td>
+<td>Name, buttons, and bio on the left, photo on the right.</td>
+</tr>
+<tr class="even">
+<td><code>marquee</code></td>
+<td>One large image across the top, everything else stacked below.</td>
+</tr>
+<tr class="odd">
+<td><code>broadside</code></td>
+<td>Photo on the left, name, bio, and buttons on the right.</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Open <code>index.qmd</code> and change <code>template: jolla</code> to <code>template: trestles</code>. Save, then click <strong>Render Website</strong>. Look for the changes.</li>
+<li>Try <code>template: solana</code> next.</li>
+<li>Keep the one you like. The screenshots in the rest of this guide use <code>jolla</code>.</li>
+</ol>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/home-trestles.png" class="img-fluid figure-img" alt="The home page in the trestles layout: photo and buttons in a left column, bio on the right."></p>
+<figcaption>trestles: photo on the left.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/home-solana.png" class="img-fluid figure-img" alt="The home page in the solana layout: bio on the left, photo on the right."></p>
+<figcaption>solana: photo on the right.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p><code>marquee</code> uses a wide banner image, not a square headshot. Pictures of all five layouts are in the <a href="https://quarto.org/docs/websites/website-about.html">Quarto documentation</a>.</p>
+</section>
+<section id="pick-a-theme" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="pick-a-theme"><span class="header-section-number">13</span> Pick a theme</h2>
+<p><em>Done by 3:10.</em></p>
+<p>You can change the overall look of your site with the <code>theme:</code> option. Quarto has <a href="https://quarto.org/docs/output-formats/html-themes.html">25 themes</a> you can choose from.</p>
+<ol type="1">
+<li>Open <code>_quarto.yml</code> and change <code>theme: cosmo</code> to <code>theme: flatly</code>. Save and render. Notice the change.</li>
+<li>Try <code>sandstone</code>, <code>litera</code>, and <code>zephyr</code>. All four are professional choices appropriate for an academic site, so pick whichever you like. You can see full-size previews of all 25 at <a href="https://bootswatch.com/">bootswatch.com</a>.</li>
+</ol>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/theme-flatly.png" class="img-fluid figure-img" alt="The home page in the flatly theme, with a dark navy navbar."></p>
+<figcaption>flatly: dark navbar.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/theme-sandstone.png" class="img-fluid figure-img" alt="The home page in the sandstone theme, with warm gray tones."></p>
+<figcaption>sandstone: warm and muted.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/theme-litera.png" class="img-fluid figure-img" alt="The home page in the litera theme, with serif body text."></p>
+<figcaption>litera: serif body text.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/theme-zephyr.png" class="img-fluid figure-img" alt="The home page in the zephyr theme, with rounded buttons and generous spacing."></p>
+<figcaption>zephyr: rounded and airy.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Just for fun, try <code>sketchy</code> and/or <code>vapor</code>. (Then change back to your favorite.)</li>
+</ol>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/theme-sketchy.png" class="img-fluid figure-img" alt="The home page in the sketchy theme, drawn in a hand-sketched comic style."></p>
+<figcaption>sketchy.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/theme-vapor.png" class="img-fluid figure-img" alt="The home page in the vapor theme, in neon purple vaporwave colors."></p>
+<figcaption>vapor.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="publish-your-site-with-github-desktop" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="publish-your-site-with-github-desktop"><span class="header-section-number">14</span> Publish your site with GitHub Desktop</h2>
+<p><em>Done by 3:20.</em></p>
+<p>Open <strong>GitHub Desktop</strong>.</p>
+<ol type="1">
+<li>Click <strong>File → Add local repository…</strong>, click <strong>Choose…</strong>, and select your <code>USERNAME.github.io</code> folder. Then click <strong>Add repository</strong>.</li>
+<li>Your files will be listed under the <strong>Changes</strong> tab. There will be a lot of them. You need them all, so leave everything checked.</li>
+<li>At the bottom left, type <code>Initial commit</code> in the <strong>Summary</strong> box. Then click <strong>Commit to main</strong>. (Your button may say <code>master</code> instead; remember which one it says.)</li>
+<li>At the top of the window, click <strong>Publish repository</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/github-desktop-changes.png" class="img-fluid figure-img" alt="GitHub Desktop's Changes tab listing many files, with the Summary box and the Commit to main button at the bottom left."></p>
+<figcaption>The Changes tab before the first commit.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Uncheck <strong>Keep this code private</strong> before you publish. With a free account, GitHub Pages only works for <em>public</em> repositories.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/github-desktop-publish.png" class="img-fluid figure-img" alt="GitHub Desktop's Publish repository dialog, with the name filled in and Keep this code private unchecked."></p>
+<figcaption>The Publish dialog, with the private box unchecked.</figcaption>
+</figure>
+</div>
+<p>Click <strong>Publish repository</strong>. Your new repository will appear on github.com in a few seconds.</p>
+</section>
+<section id="turn-on-github-pages" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="turn-on-github-pages"><span class="header-section-number">15</span> Turn on GitHub Pages</h2>
+<p><em>Live by 3:30.</em></p>
+<p>On github.com, open your new repository and update <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">the settings</a>:</p>
+<ol type="1">
+<li>Click <strong>Settings</strong> at the top, then <strong>Pages</strong> down the left side.</li>
+<li>Under <strong>Build and deployment</strong>, set <strong>Source</strong> to <strong>Deploy from a branch</strong>.</li>
+<li>Set <strong>Branch</strong> to <code>main</code> (or to <code>master</code> if that is what your commit button said) and set the folder beside it to <strong><code>/docs</code></strong>. Click <strong>Save</strong>.</li>
+<li>Wait about two minutes, then visit <code>https://USERNAME.github.io</code>. GitHub documentation says this can take up to ten minutes.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="screenshots/pages-settings.png" class="img-fluid figure-img" alt="GitHub's Pages settings: Source set to Deploy from a branch, with the branch dropdown and the folder set to /docs."></p>
+<figcaption>The Pages settings, pointed at the docs folder.</figcaption>
+</figure>
+</div>
+</section>
+<section id="updating-your-site" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="updating-your-site"><span class="header-section-number">16</span> Updating your site</h2>
+<p>To update your site:</p>
+<ol type="1">
+<li>Edit the <code>.qmd</code> file in RStudio. Save it.</li>
+<li>Click <strong>Build → Render Website</strong>.</li>
+<li>In GitHub Desktop, write a short summary, click <strong>Commit to main</strong>, then click <strong>Push origin</strong>.</li>
+</ol>
+<p>These updates will appear on your live site about two minutes later (but can take longer).</p>
+</section>
+<section id="extension-your-own-web-address" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="extension-your-own-web-address"><span class="header-section-number">17</span> Extension: your own web address</h2>
+<p><code>USERNAME.github.io</code> is free and perfectly reasonable. A custom domain like <code>johnasmith.com</code> costs about $15 a year and looks a little more polished.</p>
+<p><strong>Choosing the name.</strong> Your name makes the best address.</p>
+<ul>
+<li><code>johnasmith.com</code> is the best.</li>
+<li><code>jasmith.com</code>, <code>johnsmith.io</code>, and <code>jsmith.co</code> are good also.</li>
+<li>Skip hyphens, digits, and anything that ties you to a place or a field. <code>johnsmithfsupolitical.science</code> is a poor choice.</li>
+</ul>
+<p>Try names in <a href="https://domainr.com/?q=">Domainr</a>. It checks many related domain names at once and shows which ones are available. (But don’t buy it from Domainr.)</p>
+<p><strong>Buying it.</strong> Search for the name on Namecheap, add it to the cart, and check out. A <code>.com</code> domain name costs about $10 the first year and about $15 a year after that. Accept the free WHOIS protection; decline the other add-ons.</p>
+<p><strong>Connecting it.</strong></p>
+<ol type="1">
+<li>On Namecheap, click <strong>Domain List → Manage → Advanced DNS</strong>.
+<ol type="a">
+<li>Delete any records already in the list. A new domain might have a www CNAME pointing at Namecheap’s parking page and a URL Redirect on @. Remove these; both conflict with the records below.</li>
+<li>Add five records (i.e., the five that <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">Namecheap’s own GitHub Pages guide</a> describes):</li>
+</ol></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Host</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A Record</td>
+<td><code>@</code></td>
+<td><code>185.199.108.153</code></td>
+</tr>
+<tr class="even">
+<td>A Record</td>
+<td><code>@</code></td>
+<td><code>185.199.109.153</code></td>
+</tr>
+<tr class="odd">
+<td>A Record</td>
+<td><code>@</code></td>
+<td><code>185.199.110.153</code></td>
+</tr>
+<tr class="even">
+<td>A Record</td>
+<td><code>@</code></td>
+<td><code>185.199.111.153</code></td>
+</tr>
+<tr class="odd">
+<td>CNAME Record</td>
+<td><code>www</code></td>
+<td><code>USERNAME.github.io</code></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>In the RStudio console, run <code>writeLines("johnasmith.com", "CNAME")</code> (replace your own domain in the quotes). This creates a file named <code>CNAME</code> that has just the domain. Quarto copies it into <code>docs/</code> on every render, which is how GitHub knows the domain belongs to this site. Render, commit, push.</li>
+<li>In your repository on github.com, click <strong>Settings → Pages</strong>, type <code>johnasmith.com</code> into <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site"><strong>Custom domain</strong></a>, and click <strong>Save</strong>. GitHub checks your DNS records, which usually takes minutes but can take up to a day. When the check passes, check <strong>Enforce HTTPS</strong>. GitHub documentation says the box can take up to a day to become clickable. Once you check it, the certificate usually arrives within a few minutes. If it doesn’t, remove the custom domain, add it again, and click <strong>Save</strong>. (If GitHub Desktop offers <strong>Pull origin</strong> afterward, click it; GitHub sometimes adds a small commit of its own when you save the domain.)</li>
+</ol>
+<p>Your site is now live at the new address; the old <code>USERNAME.github.io</code> address keeps working as well.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/www\.carlislerainey\.com\/website-workshop");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

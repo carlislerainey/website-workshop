@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "slides.html#whats-your-goal",
+    "href": "slides.html#whats-your-goal",
+    "title": "Build Your First Academic Website",
+    "section": "What’s your goal?",
+    "text": "What’s your goal?\n\n(the content and design follow from there)"
+  },
+  {
+    "objectID": "slides.html#what-youll-build",
+    "href": "slides.html#what-youll-build",
+    "title": "Build Your First Academic Website",
+    "section": "What you’ll build",
+    "text": "What you’ll build\nFollow this guide to build your first academic website:\n\na home page with your photo and a short bio\na research page\na teaching page\nyour CV\n\nYour website will be at https://USERNAME.github.io. There’s no payment required unless you want a custom domain name (see the extension at the end)."
+  },
+  {
+    "objectID": "slides.html#what-youll-build-1",
+    "href": "slides.html#what-youll-build-1",
+    "title": "Build Your First Academic Website",
+    "section": "What you’ll build",
+    "text": "What you’ll build\nUSERNAME is a placeholder for your own GitHub username. My USERNAME is carlislerainey, so my repository is called carlislerainey.github.io and my site is at https://carlislerainey.github.io. Put your USERNAME wherever you see the placeholder."
+  },
+  {
+    "objectID": "slides.html#what-youll-build-2",
+    "href": "slides.html#what-youll-build-2",
+    "title": "Build Your First Academic Website",
+    "section": "What you’ll build",
+    "text": "What you’ll build\n\nThe home page you are about to build."
+  },
+  {
+    "objectID": "slides.html#examples",
+    "href": "slides.html#examples",
+    "title": "Build Your First Academic Website",
+    "section": "Examples",
+    "text": "Examples\nThese three are pretty close to what you’ll have after you finish this guide:\n\nArtur Baranov, a PhD candidate at Northwestern, uses jolla, the centered layout we start from. Source is on GitHub.\nMaranda Joyce, a PhD candidate at Rice, uses trestles and one of Quarto’s dark themes. Source is on GitHub.\nTyler Rongxuan Chen, a PhD candidate at Michigan, uses solana and almost the same row of buttons you will make. Source is on GitHub.\n\nThese two have a bit of customization.\n\nCharlotte Kuberka, a PhD candidate at LSE, kept trestles and restyled it to match her CV. Source is on GitHub.\nFrederik Hjorth, a professor at Copenhagen, has a page each for his papers, his teaching, and his data. Source is on GitHub."
+  },
+  {
+    "objectID": "slides.html#examples-1",
+    "href": "slides.html#examples-1",
+    "title": "Build Your First Academic Website",
+    "section": "Examples",
+    "text": "Examples\nFour more sites show what a Quarto site can grow into.\n\nChad Hazlett, a professor at UCLA, adds a publications page and a software page to the three pages you will build. Source is on GitHub.\nChristopher Kenny, a postdoc at Princeton, adds software, a blog, and a page for the Quarto extensions he writes. Source is on GitHub.\nFrederick Solt, a professor at Iowa, has about 180 pages: a blog, software, and a site for each of his data projects. Source is on GitHub.\nRob Hyndman, a professor of statistics at Monash, has nearly 900 pages: a blog, publications, software, seminars, and teaching. Source is on GitHub, though he hosts the site on his own server."
+  },
+  {
+    "objectID": "slides.html#before-the-workshop",
+    "href": "slides.html#before-the-workshop",
+    "title": "Build Your First Academic Website",
+    "section": "Before the workshop",
+    "text": "Before the workshop\nHere’s what you should do before the workshop. Most of you should already have most of these.\n\nA GitHub account. Sign up free at github.com/signup. Choose the username carefully, because it becomes your web address. johnasmith gives the site johnasmith.github.io. Use your name, all lowercase, nothing tied to FSU, and no gamer tags. Happy Git with R has good advice on picking one. If your existing username would look odd on a CV, change it before the workshop.\nGitHub Desktop. Install from desktop.github.com. Make sure to get signed in to your account (GitHub Desktop → Settings → Accounts on a Mac, File → Options → Accounts on Windows)."
+  },
+  {
+    "objectID": "slides.html#before-the-workshop-1",
+    "href": "slides.html#before-the-workshop-1",
+    "title": "Build Your First Academic Website",
+    "section": "Before the workshop",
+    "text": "Before the workshop\n\nR and RStudio. Install the latest version from posit.co. Any version since 2025 or so works, too. Quarto comes built into RStudio. Check RStudio → About RStudio if you aren’t sure.\nA professional headshot, cropped square.\nYour CV as a PDF.\nAn ORCID iD. Register for free at orcid.org/register.\nYour Google Scholar profile URL. Only if you have a profile. No profile yet is fine."
+  },
+  {
+    "objectID": "slides.html#how-this-works",
+    "href": "slides.html#how-this-works",
+    "title": "Build Your First Academic Website",
+    "section": "How this works",
+    "text": "How this works\n\nWe write our pages as plain text files.\nWe use Quarto to turn them into a website in a folder called docs/, which makes GitHub Pages simple.\nWe use GitHub Desktop to send that folder to GitHub (and GitHub Pages serves it to the world)."
+  },
+  {
+    "objectID": "slides.html#make-the-project-in-rstudio",
+    "href": "slides.html#make-the-project-in-rstudio",
+    "title": "Build Your First Academic Website",
+    "section": "Make the project in RStudio",
+    "text": "Make the project in RStudio\nDone by 2:15.\nIn RStudio, click File → New Project… → New Directory → Quarto Website. Fill in the pane that follows.\n\nDirectory name: USERNAME.github.io, all lowercase. This exact name puts your site at https://USERNAME.github.io. If you use any other name, your site will be at USERNAME.github.io/that-other-name/.\nCreate project as subdirectory of: somewhere you will find it again. I keep my website in Dropbox/, but git and Dropbox don’t always play nicely.\nEngine: leave it as it is.\nCheck Create a git repository. You’ll need the git repo for GitHub Desktop later.\nLeave Use renv with this project unchecked.\n\nClick Create Project. RStudio reopens with your new project loaded."
+  },
+  {
+    "objectID": "slides.html#render-the-site-quarto-gave-you",
+    "href": "slides.html#render-the-site-quarto-gave-you",
+    "title": "Build Your First Academic Website",
+    "section": "Render the site Quarto gave you",
+    "text": "Render the site Quarto gave you\nDone by 2:20.\nQuarto has already added a working website. Before we change anything, look at what it added.\nIn the Files pane (bottom right) you will find four files:\n\n\n\n\n\n\n\nFile\nWhat it is\n\n\n\n\n_quarto.yml\nThe settings for your whole site: title, navigation bar, theme.\n\n\nindex.qmd\nYour home page.\n\n\nabout.qmd\nA second page, included as an example.\n\n\nstyles.css\nAn empty file for custom styling."
+  },
+  {
+    "objectID": "slides.html#render-the-site-quarto-gave-you-1",
+    "href": "slides.html#render-the-site-quarto-gave-you-1",
+    "title": "Build Your First Academic Website",
+    "section": "Render the site Quarto gave you",
+    "text": "Render the site Quarto gave you\nRender your website. Go to the Build tab (top right) and click Render Website. Your website will appear in the Viewer pane.\n\nThe Build tab’s Render Website button."
+  },
+  {
+    "objectID": "slides.html#render-the-site-quarto-gave-you-2",
+    "href": "slides.html#render-the-site-quarto-gave-you-2",
+    "title": "Build Your First Academic Website",
+    "section": "Render the site Quarto gave you",
+    "text": "Render the site Quarto gave you\nYou will also see a new folder in the Files pane called _site. That’s where Quarto put the finished website. It’s the default spot; you will move it to a new location in the next section.\n\nThe site Quarto starts you with."
+  },
+  {
+    "objectID": "slides.html#point-your-site-at-the-docs-folder",
+    "href": "slides.html#point-your-site-at-the-docs-folder",
+    "title": "Build Your First Academic Website",
+    "section": "Point your site at the docs folder",
+    "text": "Point your site at the docs folder\nDone by 2:30.\nOpen _quarto.yml from the Files pane, select everything in it, delete it, and replace it with this:\nThe full block is in the guide, section 7. \nWe changed five things away from the Quarto default:\n\noutput-dir: docs sends the finished site to docs/ instead of _site/. GitHub Pages will serve a folder named docs (but not one called _site/).\ntitle: is your name.\nThe navbar lists Research, Teaching, and your CV instead of the example “about” page.\ntheme: cosmo replaces a two-item list. The brand entry it came with uses a _brand.yml file of custom colors and fonts, which you don’t have.\ntoc: true is deleted, because a table of contents on a webpage is usually clutter."
+  },
+  {
+    "objectID": "slides.html#point-your-site-at-the-docs-folder-1",
+    "href": "slides.html#point-your-site-at-the-docs-folder-1",
+    "title": "Build Your First Academic Website",
+    "section": "Point your site at the docs folder",
+    "text": "Point your site at the docs folder\ncss: styles.css stays. The file is empty and we won’t add anything today. Your own CSS rules can go there later.\n\n\n\n\n\n\nWarning\n\n\nYAML is particular about spaces. The spaces create the indentation that gives the file its structure. Keep the spaces exactly as they appear above. Use spaces rather than tabs.\n\n\n\nDelete the _site folder you made a moment ago. Check the box beside it in the Files pane and click Delete. We won’t need it again."
+  },
+  {
+    "objectID": "slides.html#build-your-three-pages",
+    "href": "slides.html#build-your-three-pages",
+    "title": "Build Your First Academic Website",
+    "section": "Build your three pages",
+    "text": "Build your three pages\nDone by 2:50.\nStart by deleting the example page we don’t need. Check about.qmd in the Files pane, then click Delete.\nYour home page. Open index.qmd, select everything, and replace it with Quarto syntax below. Put in your own name, bio, email address, Scholar URL, and ORCID iD:\nThe full block is in the guide, section 8."
+  },
+  {
+    "objectID": "slides.html#build-your-three-pages-1",
+    "href": "slides.html#build-your-three-pages-1",
+    "title": "Build Your First Academic Website",
+    "section": "Build your three pages",
+    "text": "Build your three pages\nIf you don’t have a Google Scholar profile yet, delete its three lines. Google Scholar is only important once you accumulate citations.\n    - icon: google\n      text: Google Scholar\n      href: https://scholar.google.com/citations?user=XXXXXXXXXXXX\nTo add another button (e.g., GitHub, LinkedIn), copy the three-line pattern and pick an icon name."
+  },
+  {
+    "objectID": "slides.html#build-your-three-pages-2",
+    "href": "slides.html#build-your-three-pages-2",
+    "title": "Build Your First Academic Website",
+    "section": "Build your three pages",
+    "text": "Build your three pages\nYour research page. Click File → New File → Text File, paste the block below, then choose File → Save As… and name it exactly research.qmd:\nThe full block is in the guide, section 8. \nReplace the placeholder material with your own.\nYour teaching page. Click File → New File → Text File, paste the block below, then choose File → Save As… and name it exactly teaching.qmd:\nThe full block is in the guide, section 8. \nReplace the placeholder material with your own."
+  },
+  {
+    "objectID": "slides.html#build-your-three-pages-3",
+    "href": "slides.html#build-your-three-pages-3",
+    "title": "Build Your First Academic Website",
+    "section": "Build your three pages",
+    "text": "Build your three pages\nThe rendered research page looks like this, with the sample content in it:\n\nThe research page with the sample content."
+  },
+  {
+    "objectID": "slides.html#add-your-photo-and-your-cv",
+    "href": "slides.html#add-your-photo-and-your-cv",
+    "title": "Build Your First Academic Website",
+    "section": "Add your photo and your CV",
+    "text": "Add your photo and your CV\nDone by 2:55.\nYour headshot and your CV are files rather than text. Find them in Finder (on a Mac) or File Explorer (on Windows). Right-click and copy these files (together or one at a time). In RStudio, go to the Files pane and choose More → Show Folder in New Window. You’ll see your project folder open in a new window, with _quarto.yml and your .qmd files already in it.\nPaste both files in. Rename them exactly:\n\nheadshot.jpg\ncv.pdf"
+  },
+  {
+    "objectID": "slides.html#add-your-photo-and-your-cv-1",
+    "href": "slides.html#add-your-photo-and-your-cv-1",
+    "title": "Build Your First Academic Website",
+    "section": "Add your photo and your CV",
+    "text": "Add your photo and your CV\n\n\n\n\n\n\nAny PDF works the same way\n\n\nA working paper, a syllabus, and conference slides would work the same way. Drop the file into the project folder, link it from any page (e.g., [PDF](smith-turnout-2026.pdf) on your research page), and render. Quarto copies every file your pages link to into docs/, so the link will work on the live site with no upload step."
+  },
+  {
+    "objectID": "slides.html#add-a-.nojekyll-file",
+    "href": "slides.html#add-a-.nojekyll-file",
+    "title": "Build Your First Academic Website",
+    "section": "Add a .nojekyll file",
+    "text": "Add a .nojekyll file\nClick into the Console at the bottom left and run:\nfile.create(\".nojekyll\")\nIt prints TRUE and creates an empty file.\nWithout this strange file, GitHub Pages will run your folder through a blog engine called Jekyll. We don’t want to do that because we’re rendering locally. The empty .nojekyll file turns that off. Quarto’s documentation recommends this."
+  },
+  {
+    "objectID": "slides.html#check-your-site-before-you-publish",
+    "href": "slides.html#check-your-site-before-you-publish",
+    "title": "Build Your First Academic Website",
+    "section": "Check your site before you publish",
+    "text": "Check your site before you publish\nDone by 3:00.\nGo to Build → Render Website once more.\nThen click the arrow at the top of the Viewer pane to open your site in a real browser. Before we publish it to GitHub, click through everything in the navigation bar:\n\nHome shows your photo, your bio, and four working buttons.\nResearch and Teaching show your own content.\nCV opens your PDF.\n\nFix anything broken."
+  },
+  {
+    "objectID": "slides.html#rearrange-your-home-page",
+    "href": "slides.html#rearrange-your-home-page",
+    "title": "Build Your First Academic Website",
+    "section": "Rearrange your home page",
+    "text": "Rearrange your home page\nDone by 3:05.\nQuarto has five layout templates that you can use for your homepage (i.e., index.qmd). You can change it with the template: option.\n\n\n\n\n\n\n\nLayout\nArrangement\n\n\n\n\njolla\nPhoto at the top, centered, with your name, bio, and buttons below it.\n\n\ntrestles\nPhoto and buttons in a left column, bio on the right.\n\n\nsolana\nName, buttons, and bio on the left, photo on the right.\n\n\nmarquee\nOne large image across the top, everything else stacked below.\n\n\nbroadside\nPhoto on the left, name, bio, and buttons on the right."
+  },
+  {
+    "objectID": "slides.html#rearrange-your-home-page-1",
+    "href": "slides.html#rearrange-your-home-page-1",
+    "title": "Build Your First Academic Website",
+    "section": "Rearrange your home page",
+    "text": "Rearrange your home page\n\nOpen index.qmd and change template: jolla to template: trestles. Save, then click Render Website. Look for the changes.\nTry template: solana next.\nKeep the one you like. The screenshots in the rest of this guide use jolla."
+  },
+  {
+    "objectID": "slides.html#rearrange-your-home-page-2",
+    "href": "slides.html#rearrange-your-home-page-2",
+    "title": "Build Your First Academic Website",
+    "section": "Rearrange your home page",
+    "text": "Rearrange your home page\n\n\n\n\n\n\n\n\n\ntrestles: photo on the left.\n\n\n\n\n\n\n\nsolana: photo on the right.\n\n\n\n\n\nmarquee uses a wide banner image, not a square headshot. Pictures of all five layouts are in the Quarto documentation."
+  },
+  {
+    "objectID": "slides.html#pick-a-theme",
+    "href": "slides.html#pick-a-theme",
+    "title": "Build Your First Academic Website",
+    "section": "Pick a theme",
+    "text": "Pick a theme\nDone by 3:10.\nYou can change the overall look of your site with the theme: option. Quarto has 25 themes you can choose from.\n\nOpen _quarto.yml and change theme: cosmo to theme: flatly. Save and render. Notice the change.\nTry sandstone, litera, and zephyr. All four are professional choices appropriate for an academic site, so pick whichever you like. You can see full-size previews of all 25 at bootswatch.com."
+  },
+  {
+    "objectID": "slides.html#pick-a-theme-1",
+    "href": "slides.html#pick-a-theme-1",
+    "title": "Build Your First Academic Website",
+    "section": "Pick a theme",
+    "text": "Pick a theme\n\n\n\n\n\n\n\n\n\nflatly: dark navbar.\n\n\n\n\n\n\n\nsandstone: warm and muted."
+  },
+  {
+    "objectID": "slides.html#pick-a-theme-2",
+    "href": "slides.html#pick-a-theme-2",
+    "title": "Build Your First Academic Website",
+    "section": "Pick a theme",
+    "text": "Pick a theme\n\n\n\n\n\n\n\n\n\nlitera: serif body text.\n\n\n\n\n\n\n\nzephyr: rounded and airy."
+  },
+  {
+    "objectID": "slides.html#pick-a-theme-3",
+    "href": "slides.html#pick-a-theme-3",
+    "title": "Build Your First Academic Website",
+    "section": "Pick a theme",
+    "text": "Pick a theme\n\nJust for fun, try sketchy and/or vapor. (Then change back to your favorite.)\n\n\n\n\n\n\n\n\n\n\nsketchy.\n\n\n\n\n\n\n\nvapor."
+  },
+  {
+    "objectID": "slides.html#publish-your-site-with-github-desktop",
+    "href": "slides.html#publish-your-site-with-github-desktop",
+    "title": "Build Your First Academic Website",
+    "section": "Publish your site with GitHub Desktop",
+    "text": "Publish your site with GitHub Desktop\nDone by 3:20.\nOpen GitHub Desktop.\n\nClick File → Add local repository…, click Choose…, and select your USERNAME.github.io folder. Then click Add repository.\nYour files will be listed under the Changes tab. There will be a lot of them. You need them all, so leave everything checked.\nAt the bottom left, type Initial commit in the Summary box. Then click Commit to main. (Your button may say master instead; remember which one it says.)\nAt the top of the window, click Publish repository."
+  },
+  {
+    "objectID": "slides.html#publish-your-site-with-github-desktop-1",
+    "href": "slides.html#publish-your-site-with-github-desktop-1",
+    "title": "Build Your First Academic Website",
+    "section": "Publish your site with GitHub Desktop",
+    "text": "Publish your site with GitHub Desktop\n\nThe Changes tab before the first commit.\n\n\n\n\n\nImportant\n\n\nUncheck Keep this code private before you publish. With a free account, GitHub Pages only works for public repositories."
+  },
+  {
+    "objectID": "slides.html#publish-your-site-with-github-desktop-2",
+    "href": "slides.html#publish-your-site-with-github-desktop-2",
+    "title": "Build Your First Academic Website",
+    "section": "Publish your site with GitHub Desktop",
+    "text": "Publish your site with GitHub Desktop\n\nThe Publish dialog, with the private box unchecked.Click Publish repository. Your new repository will appear on github.com in a few seconds."
+  },
+  {
+    "objectID": "slides.html#turn-on-github-pages",
+    "href": "slides.html#turn-on-github-pages",
+    "title": "Build Your First Academic Website",
+    "section": "Turn on GitHub Pages",
+    "text": "Turn on GitHub Pages\nLive by 3:30.\nOn github.com, open your new repository and update the settings:\n\nClick Settings at the top, then Pages down the left side.\nUnder Build and deployment, set Source to Deploy from a branch.\nSet Branch to main (or to master if that is what your commit button said) and set the folder beside it to /docs. Click Save.\nWait about two minutes, then visit https://USERNAME.github.io. GitHub documentation says this can take up to ten minutes."
+  },
+  {
+    "objectID": "slides.html#turn-on-github-pages-1",
+    "href": "slides.html#turn-on-github-pages-1",
+    "title": "Build Your First Academic Website",
+    "section": "Turn on GitHub Pages",
+    "text": "Turn on GitHub Pages\n\nThe Pages settings, pointed at the docs folder."
+  },
+  {
+    "objectID": "slides.html#updating-your-site",
+    "href": "slides.html#updating-your-site",
+    "title": "Build Your First Academic Website",
+    "section": "Updating your site",
+    "text": "Updating your site\nTo update your site:\n\nEdit the .qmd file in RStudio. Save it.\nClick Build → Render Website.\nIn GitHub Desktop, write a short summary, click Commit to main, then click Push origin.\n\nThese updates will appear on your live site about two minutes later (but can take longer)."
+  },
+  {
+    "objectID": "slides.html#extension-your-own-web-address",
+    "href": "slides.html#extension-your-own-web-address",
+    "title": "Build Your First Academic Website",
+    "section": "Extension: your own web address",
+    "text": "Extension: your own web address\nUSERNAME.github.io is free and perfectly reasonable. A custom domain like johnasmith.com costs about $15 a year and looks a little more polished.\nChoosing the name. Your name makes the best address.\n\njohnasmith.com is the best.\njasmith.com, johnsmith.io, and jsmith.co are good also.\nSkip hyphens, digits, and anything that ties you to a place or a field. johnsmithfsupolitical.science is a poor choice.\n\nTry names in Domainr. It checks many related domain names at once and shows which ones are available. (But don’t buy it from Domainr.)"
+  },
+  {
+    "objectID": "slides.html#extension-your-own-web-address-1",
+    "href": "slides.html#extension-your-own-web-address-1",
+    "title": "Build Your First Academic Website",
+    "section": "Extension: your own web address",
+    "text": "Extension: your own web address\nBuying it. Search for the name on Namecheap, add it to the cart, and check out. A .com domain name costs about $10 the first year and about $15 a year after that. Accept the free WHOIS protection; decline the other add-ons.\nConnecting it.\n\nOn Namecheap, click Domain List → Manage → Advanced DNS.\n\nDelete any records already in the list. A new domain might have a www CNAME pointing at Namecheap’s parking page and a URL Redirect on @. Remove these; both conflict with the records below.\nAdd five records (i.e., the five that Namecheap’s own GitHub Pages guide describes):\n\n\n\n\n\nType\nHost\nValue\n\n\n\n\nA Record\n@\n185.199.108.153\n\n\nA Record\n@\n185.199.109.153\n\n\nA Record\n@\n185.199.110.153\n\n\nA Record\n@\n185.199.111.153\n\n\nCNAME Record\nwww\nUSERNAME.github.io"
+  },
+  {
+    "objectID": "slides.html#extension-your-own-web-address-2",
+    "href": "slides.html#extension-your-own-web-address-2",
+    "title": "Build Your First Academic Website",
+    "section": "Extension: your own web address",
+    "text": "Extension: your own web address\n\nIn the RStudio console, run writeLines(\"johnasmith.com\", \"CNAME\") (replace your own domain in the quotes). This creates a file named CNAME that has just the domain. Quarto copies it into docs/ on every render, which is how GitHub knows the domain belongs to this site. Render, commit, push.\nIn your repository on github.com, click Settings → Pages, type johnasmith.com into Custom domain, and click Save. GitHub checks your DNS records, which usually takes minutes but can take up to a day. When the check passes, check Enforce HTTPS. GitHub documentation says the box can take up to a day to become clickable. Once you check it, the certificate usually arrives within a few minutes. If it doesn’t, remove the custom domain, add it again, and click Save. (If GitHub Desktop offers Pull origin afterward, click it; GitHub sometimes adds a small commit of its own when you save the domain.)\n\nYour site is now live at the new address; the old USERNAME.github.io address keeps working as well."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Build Your First Academic Website",
+    "section": "",
+    "text": "A workshop for PhD students.\nGoal: in 90 minutes, build a home page with your photo and bio, a research page, a teaching page, and your CV, and publish it at USERNAME.github.io.\n\n\n\n\nThe guide\nTo follow during the workshop.\n\n\n\n\n\nThe checklist\nOne page. Print it and tick off the steps as you go.\n\n\n\n\n\nThe example site\nThe site the guide builds. Click around.\n\n\n\n\n\nThe slides\nTo put on the screen during the workshop.\n\n\n\n\nSuggestions and questions. If something here is wrong, unclear, or missing, open an issue on GitHub. Ideas for improving the guide are welcome too. You’ll need the GitHub account you set up for the workshop."
+  },
+  {
+    "objectID": "guide.html",
+    "href": "guide.html",
+    "title": "Build Your First Academic Website",
+    "section": "",
+    "text": "How I made this guide\n\n\n\nI built this guide with a lot of help from Claude Code. I walked Claude Code through how I recommend using Quarto to build an academic website, and we built a simple website together. Then Claude Code helped me draft the step-by-step instructions, then rewrite and verify them."
+  },
+  {
+    "objectID": "guide.html#what-youll-build",
+    "href": "guide.html#what-youll-build",
+    "title": "Build Your First Academic Website",
+    "section": "1 What you’ll build",
+    "text": "1 What you’ll build\nFollow this guide to build your first academic website:\n\na home page with your photo and a short bio\na research page\na teaching page\na link to your CV\n\nYour website will be at https://USERNAME.github.io. There’s no payment required unless you want a custom domain name (see the extension at the end).\nUSERNAME is a placeholder for your own GitHub username. My USERNAME is carlislerainey, so my repository is called carlislerainey.github.io and my site is at https://carlislerainey.github.io. Put your USERNAME wherever you see the placeholder.\n\n\n\nThe home page you are about to build."
+  },
+  {
+    "objectID": "guide.html#examples",
+    "href": "guide.html#examples",
+    "title": "Build Your First Academic Website",
+    "section": "2 Examples",
+    "text": "2 Examples\nHave a look at the sites below. These are made using a process similar to the one described in this guide.\nThese three are pretty close to what you’ll have after you finish this guide:\n\nArtur Baranov, a PhD candidate at Northwestern, uses jolla, the centered layout we start from. Source is on GitHub.\nMaranda Joyce, a PhD candidate at Rice, uses trestles and one of Quarto’s dark themes. Source is on GitHub.\nTyler Rongxuan Chen, a PhD candidate at Michigan, uses solana and almost the same row of buttons you will make. Source is on GitHub.\n\nThese two have a bit of customization.\n\nCharlotte Kuberka, a PhD candidate at LSE, kept trestles and restyled it to match her CV. Source is on GitHub.\nFrederik Hjorth, a professor at Copenhagen, has a page each for his papers, his teaching, and his data. Source is on GitHub.\n\nFour more sites show what a Quarto site can grow into.\n\nChad Hazlett, a professor at UCLA, adds a publications page and a software page to the three pages you will build. Source is on GitHub.\nChristopher Kenny, a postdoc at Princeton, adds software, a blog, and a page for the Quarto extensions he writes. Source is on GitHub.\nFrederick Solt, a professor at Iowa, has about 180 pages: a blog, software, and a site for each of his data projects. Source is on GitHub.\nRob Hyndman, a professor of statistics at Monash, has nearly 900 pages: a blog, publications, software, seminars, and teaching. Source is on GitHub, though he hosts the site on his own server."
+  },
+  {
+    "objectID": "guide.html#before-the-workshop",
+    "href": "guide.html#before-the-workshop",
+    "title": "Build Your First Academic Website",
+    "section": "3 Before the workshop",
+    "text": "3 Before the workshop\nHere’s what you should do before the workshop. Most of you should already have most of these.\n\nA GitHub account. Sign up free at github.com/signup. Choose the username carefully, because it becomes your web address. johnasmith gives the site johnasmith.github.io. Use your name, all lowercase, nothing tied to FSU, and no gamer tags. Happy Git with R has good advice on picking one. If your existing username would look odd on a CV, change it before the workshop.\nGitHub Desktop. Install from desktop.github.com. Make sure to get signed in to your account (GitHub Desktop → Settings → Accounts on a Mac, File → Options → Accounts on Windows).\nR and RStudio. Install the latest version from posit.co. Any version since 2025 or so works, too. Quarto comes built into RStudio. Check RStudio → About RStudio if you aren’t sure.\nA professional headshot, cropped square.\nYour CV as a PDF.\nAn ORCID iD. Register for free at orcid.org/register.\nYour Google Scholar profile URL. Only if you have a profile. No profile yet is fine."
+  },
+  {
+    "objectID": "guide.html#how-this-works",
+    "href": "guide.html#how-this-works",
+    "title": "Build Your First Academic Website",
+    "section": "4 How this works",
+    "text": "4 How this works\n\nWe write our pages as plain text files.\nWe use Quarto to turn them into a website in a folder called docs/, which makes GitHub Pages simple.\nWe use GitHub Desktop to send that folder to GitHub (and GitHub Pages serves it to the world)."
+  },
+  {
+    "objectID": "guide.html#make-the-project-in-rstudio",
+    "href": "guide.html#make-the-project-in-rstudio",
+    "title": "Build Your First Academic Website",
+    "section": "5 Make the project in RStudio",
+    "text": "5 Make the project in RStudio\nDone by 2:15.\nIn RStudio, click File → New Project… → New Directory → Quarto Website. Fill in the pane that follows.\n\nDirectory name: USERNAME.github.io, all lowercase. This exact name puts your site at https://USERNAME.github.io. If you use any other name, your site will be at USERNAME.github.io/that-other-name/.\nCreate project as subdirectory of: somewhere you will find it again. I keep my website in Dropbox/, but git and Dropbox don’t always play nicely.\nEngine: leave it as it is.\nCheck Create a git repository. You’ll need the git repo for GitHub Desktop later.\nLeave Use renv with this project unchecked.\n\nClick Create Project. RStudio reopens with your new project loaded."
+  },
+  {
+    "objectID": "guide.html#render-the-site-quarto-gave-you",
+    "href": "guide.html#render-the-site-quarto-gave-you",
+    "title": "Build Your First Academic Website",
+    "section": "6 Render the site Quarto gave you",
+    "text": "6 Render the site Quarto gave you\nDone by 2:20.\nQuarto has already added a working website. Before we change anything, look at what it added.\nIn the Files pane (bottom right) you will find four files:\n\n\n\n\n\n\n\nFile\nWhat it is\n\n\n\n\n_quarto.yml\nThe settings for your whole site: title, navigation bar, theme.\n\n\nindex.qmd\nYour home page.\n\n\nabout.qmd\nA second page, included as an example.\n\n\nstyles.css\nAn empty file for custom styling.\n\n\n\nRender your website. Go to the Build tab (top right) and click Render Website. Your website will appear in the Viewer pane.\n\n\n\nThe Build tab’s Render Website button.\n\n\nYou will also see a new folder in the Files pane called _site. That’s where Quarto put the finished website. It’s the default spot; you will move it to a new location in the next section.\n\n\n\nThe site Quarto starts you with."
+  },
+  {
+    "objectID": "guide.html#point-your-site-at-the-docs-folder",
+    "href": "guide.html#point-your-site-at-the-docs-folder",
+    "title": "Build Your First Academic Website",
+    "section": "7 Point your site at the docs folder",
+    "text": "7 Point your site at the docs folder\nDone by 2:30.\nOpen _quarto.yml from the Files pane, select everything in it, delete it, and replace it with this:\n# The whole site is configured in this one file. The pages are the .qmd files\n# next to it; the rendered site goes in docs/.\n# Everything this file accepts: https://quarto.org/docs/reference/projects/websites.html\n\nproject:\n  type: website\n  output-dir: docs        # GitHub Pages can serve a site straight from docs/.\n\nwebsite:\n  title: \"Your Name\"      # Shown at the left end of the navbar and in the browser tab.\n  navbar:\n    left:\n      - text: Home\n        href: index.qmd\n      - research.qmd      # Link text comes from the page's own title.\n      - teaching.qmd\n      - text: CV\n        href: cv.pdf      # The CV is a PDF, not a page. Replace the file; keep the name.\n  # Three additions you will probably want, in the order people usually want them:\n  #   - Another page (talks, software, data). Create talks.qmd with a title: line at\n  #     the top, then add \"- talks.qmd\" to the navbar list above. A blog is one step\n  #     more, a page that lists posts: https://quarto.org/docs/websites/website-blog.html\n  #   - Link previews. When someone shares your site on Bluesky or in Slack, show a\n  #     card with your name and photo instead of a bare URL: add\n  #     \"site-url: https://USERNAME.github.io\" and \"open-graph: true\" at this indent.\n  #     (site-url also gives search engines a sitemap.)\n  #   - Visitor counts, if you want them: create a free Google Analytics property,\n  #     then add its ID here as google-analytics: \"G-XXXXXXXXXX\", at this indent.\n  # More additions like these: https://quarto.org/docs/websites/website-tools.html\n\nformat:\n  html:\n    theme: cosmo          # Quarto's default look. Try flatly (dark navbar), litera (serif\n                          # text), or sandstone. Change the word, re-render. All 25 themes,\n                          # with pictures: https://quarto.org/docs/output-formats/html-themes.html\n    css: styles.css       # Extra styling on top of the theme. The file is empty; your own\n                          # CSS rules go there if a theme setting ever isn't enough.\nWe changed five things away from the Quarto default:\n\noutput-dir: docs sends the finished site to docs/ instead of _site/. GitHub Pages will serve a folder named docs (but not one called _site/).\ntitle: is your name.\nThe navbar lists Research, Teaching, and your CV instead of the example “about” page.\ntheme: cosmo replaces a two-item list. The brand entry it came with uses a _brand.yml file of custom colors and fonts, which you don’t have.\ntoc: true is deleted, because a table of contents on a webpage is usually clutter.\n\ncss: styles.css stays. The file is empty and we won’t add anything today. Your own CSS rules can go there later.\n\n\n\n\n\n\nWarning\n\n\n\nYAML is particular about spaces. The spaces create the indentation that gives the file its structure. Keep the spaces exactly as they appear above. Use spaces rather than tabs.\n\n\nDelete the _site folder you made a moment ago. Check the box beside it in the Files pane and click Delete. We won’t need it again."
+  },
+  {
+    "objectID": "guide.html#build-your-three-pages",
+    "href": "guide.html#build-your-three-pages",
+    "title": "Build Your First Academic Website",
+    "section": "8 Build your three pages",
+    "text": "8 Build your three pages\nDone by 2:50.\nStart by deleting the example page we don’t need. Check about.qmd in the Files pane, then click Delete.\nYour home page. Open index.qmd, select everything, and replace it with Quarto syntax below. Put in your own name, bio, email address, Scholar URL, and ORCID iD:\n---\ntitle: \"Your Name\"\nimage: headshot.jpg          # Your photo. Square images look best. Replace the file; keep the name.\nimage-alt: \"Your Name\"       # What a screen reader says for the photo. Use your name here too.\nabout:\n  template: jolla            # Centered: photo, name, bio, buttons. Three things to try:\n                             #   - template: trestles   (photo on the left, bio on the right)\n                             #   - template: solana     (bio on the left, photo on the right)\n                             #   - image-shape: rectangle   (or rounded; on its own line at this indent)\n                             # All home-page options, with pictures:\n                             # https://quarto.org/docs/websites/website-about.html\n  links:                     # The buttons under the bio. Try adding github, linkedin,\n    - icon: envelope         # or twitter-x. Every icon name: https://icons.getbootstrap.com/\n      text: Email\n      href: mailto:you@fsu.edu\n    - icon: file-earmark-pdf\n      text: CV\n      href: cv.pdf\n    - icon: google\n      text: Google Scholar\n      href: https://scholar.google.com/citations?user=XXXXXXXXXXXX\n    - icon: person-vcard     # There is no ORCID icon in the set; use an ID card.\n      text: ORCID\n      href: https://orcid.org/0000-0000-0000-0000\n---\n\n&lt;!-- Everything below the front matter is the bio. Keep this short; two or three short paragraphs\n     is plenty. Say who you are, what you study, and what you teach. Maybe add one sentence on your dissertation. --&gt;\n\nI am a Ph.D. student in the Department of Political Science at Florida State University. I study American politics and political behavior, with a focus on how citizens form and change their opinions. I teach courses on American and comparative politics. My dissertation, \"Title of the Dissertation,\" asks how a question of interest shapes an outcome of interest.\n\nBefore starting my Ph.D. at FSU, I earned a B.A. in political science from Institution in 2022.\nIf you don’t have a Google Scholar profile yet, delete its three lines. Google Scholar is only important once you accumulate citations.\n    - icon: google\n      text: Google Scholar\n      href: https://scholar.google.com/citations?user=XXXXXXXXXXXX\nTo add another button (e.g., GitHub, LinkedIn), copy the three-line pattern and pick an icon name.\nYour research page. Click File → New File → Text File, paste the block below, then choose File → Save As… and name it exactly research.qmd:\n---\ntitle: \"Research\"\n---\n\n&lt;!-- One paragraph per paper, newest (top) to oldest (bottom). Probably use a standard APSA style. Include a DOI and hyperlink for all published papers. If you have polished working papers, include links to those as well. --&gt;\n\nMy research examines how citizens form and change their political opinions. A complete list is on my [CV](cv.pdf).\n\n## Peer-Reviewed Articles\n\nYour Name and Coauthor Name. 2026. \"Title of the Article.\" *Journal of Politics* 88 (2): 431–44. [doi: 10.1086/000000](https://doi.org/10.1086/000000)\n\nCoauthor Name and Your Name. 2025. \"Another Title.\" *Political Analysis* 33 (1): 1–18. [doi: 10.1017/pan.0000.00](https://doi.org/10.1017/pan.0000.00)\n\n## Book Chapters\n\nYour Name. Forthcoming. \"A Chapter Title.\" In *An Edited Volume*, ed. Editor Name. Cambridge: Cambridge University Press.\n\n## Working Papers\n\n\"A Paper With a Revise and Resubmit.\" Revise and resubmit, *Political Behavior*. [PDF](https://example.com/papers/paper-title.pdf)\n\n\"A Paper Under Review.\" Under review. [Preprint](https://doi.org/10.31235/osf.io/00000)\n\n## Early Projects\n\n\"A Paper Being Written.\" \nReplace the placeholder material with your own.\nYour teaching page. Click File → New File → Text File, paste the block below, then choose File → Save As… and name it exactly teaching.qmd:\n---\ntitle: \"Teaching\"\n---\n\n&lt;!-- One line per course. To link a PDF of a syllabus, put the PDF in this folder and\n     write [Syllabus](pos2041-syllabus.pdf); Quarto copies linked files into docs/. --&gt;\n\nI teach courses in American politics and research methods.\n\n## Instructor of Record\n\nPOS 2041: American National Government, Florida State University, Fall 2026.\n\n## Teaching Assistant\n\nPOS 5736: Research Design (graduate), Florida State University, 2025–2026.\n\nPOS 2041: American National Government, Florida State University, 2024–2025.\nReplace the placeholder material with your own.\nThe rendered research page looks like this, with the sample content in it:\n\n\n\nThe research page with the sample content."
+  },
+  {
+    "objectID": "guide.html#add-your-photo-and-your-cv",
+    "href": "guide.html#add-your-photo-and-your-cv",
+    "title": "Build Your First Academic Website",
+    "section": "9 Add your photo and your CV",
+    "text": "9 Add your photo and your CV\nDone by 2:55.\nYour headshot and your CV are files rather than text. Find them in Finder (on a Mac) or File Explorer (on Windows). Right-click and copy these files (together or one at a time). In RStudio, go to the Files pane and choose More → Show Folder in New Window. You’ll see your project folder open in a new window, with _quarto.yml and your .qmd files already in it.\nPaste both files in. Rename them exactly:\n\nheadshot.jpg\ncv.pdf\n\n\n\n\n\n\n\nAny PDF works the same way\n\n\n\nA working paper, a syllabus, and conference slides would work the same way. Drop the file into the project folder, link it from any page (e.g., [PDF](smith-turnout-2026.pdf) on your research page), and render. Quarto copies every file your pages link to into docs/, so the link will work on the live site with no upload step."
+  },
+  {
+    "objectID": "guide.html#add-a-.nojekyll-file",
+    "href": "guide.html#add-a-.nojekyll-file",
+    "title": "Build Your First Academic Website",
+    "section": "10 Add a .nojekyll file",
+    "text": "10 Add a .nojekyll file\nClick into the Console at the bottom left and run:\nfile.create(\".nojekyll\")\nIt prints TRUE and creates an empty file.\nWithout this strange file, GitHub Pages will run your folder through a blog engine called Jekyll. We don’t want to do that because we’re rendering locally. The empty .nojekyll file turns that off. Quarto’s documentation recommends this."
+  },
+  {
+    "objectID": "guide.html#check-your-site-before-you-publish",
+    "href": "guide.html#check-your-site-before-you-publish",
+    "title": "Build Your First Academic Website",
+    "section": "11 Check your site before you publish",
+    "text": "11 Check your site before you publish\nDone by 3:00.\nGo to Build → Render Website once more.\nThen click the arrow at the top of the Viewer pane to open your site in a real browser. Before we publish it to GitHub, click through everything in the navigation bar:\n\nHome shows your photo, your bio, and four working buttons.\nResearch and Teaching show your own content.\nCV opens your PDF.\n\nFix anything broken."
+  },
+  {
+    "objectID": "guide.html#rearrange-your-home-page",
+    "href": "guide.html#rearrange-your-home-page",
+    "title": "Build Your First Academic Website",
+    "section": "12 Rearrange your home page",
+    "text": "12 Rearrange your home page\nDone by 3:05.\nQuarto has five layout templates that you can use for your homepage (i.e., index.qmd). You can change it with the template: option.\n\n\n\n\n\n\n\nLayout\nArrangement\n\n\n\n\njolla\nPhoto at the top, centered, with your name, bio, and buttons below it.\n\n\ntrestles\nPhoto and buttons in a left column, bio on the right.\n\n\nsolana\nName, buttons, and bio on the left, photo on the right.\n\n\nmarquee\nOne large image across the top, everything else stacked below.\n\n\nbroadside\nPhoto on the left, name, bio, and buttons on the right.\n\n\n\n\nOpen index.qmd and change template: jolla to template: trestles. Save, then click Render Website. Look for the changes.\nTry template: solana next.\nKeep the one you like. The screenshots in the rest of this guide use jolla.\n\n\n\n\n\n\n\n\n\n\ntrestles: photo on the left.\n\n\n\n\n\n\n\nsolana: photo on the right.\n\n\n\n\n\nmarquee uses a wide banner image, not a square headshot. Pictures of all five layouts are in the Quarto documentation."
+  },
+  {
+    "objectID": "guide.html#pick-a-theme",
+    "href": "guide.html#pick-a-theme",
+    "title": "Build Your First Academic Website",
+    "section": "13 Pick a theme",
+    "text": "13 Pick a theme\nDone by 3:10.\nYou can change the overall look of your site with the theme: option. Quarto has 25 themes you can choose from.\n\nOpen _quarto.yml and change theme: cosmo to theme: flatly. Save and render. Notice the change.\nTry sandstone, litera, and zephyr. All four are professional choices appropriate for an academic site, so pick whichever you like. You can see full-size previews of all 25 at bootswatch.com.\n\n\n\n\n\n\n\n\n\n\nflatly: dark navbar.\n\n\n\n\n\n\n\nsandstone: warm and muted.\n\n\n\n\n\n\n\n\n\nlitera: serif body text.\n\n\n\n\n\n\n\nzephyr: rounded and airy.\n\n\n\n\n\n\nJust for fun, try sketchy and/or vapor. (Then change back to your favorite.)\n\n\n\n\n\n\n\n\n\n\nsketchy.\n\n\n\n\n\n\n\nvapor."
+  },
+  {
+    "objectID": "guide.html#publish-your-site-with-github-desktop",
+    "href": "guide.html#publish-your-site-with-github-desktop",
+    "title": "Build Your First Academic Website",
+    "section": "14 Publish your site with GitHub Desktop",
+    "text": "14 Publish your site with GitHub Desktop\nDone by 3:20.\nOpen GitHub Desktop.\n\nClick File → Add local repository…, click Choose…, and select your USERNAME.github.io folder. Then click Add repository.\nYour files will be listed under the Changes tab. There will be a lot of them. You need them all, so leave everything checked.\nAt the bottom left, type Initial commit in the Summary box. Then click Commit to main. (Your button may say master instead; remember which one it says.)\nAt the top of the window, click Publish repository.\n\n\n\n\nThe Changes tab before the first commit.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nUncheck Keep this code private before you publish. With a free account, GitHub Pages only works for public repositories.\n\n\n\n\n\nThe Publish dialog, with the private box unchecked.\n\n\nClick Publish repository. Your new repository will appear on github.com in a few seconds."
+  },
+  {
+    "objectID": "guide.html#turn-on-github-pages",
+    "href": "guide.html#turn-on-github-pages",
+    "title": "Build Your First Academic Website",
+    "section": "15 Turn on GitHub Pages",
+    "text": "15 Turn on GitHub Pages\nLive by 3:30.\nOn github.com, open your new repository and update the settings:\n\nClick Settings at the top, then Pages down the left side.\nUnder Build and deployment, set Source to Deploy from a branch.\nSet Branch to main (or to master if that is what your commit button said) and set the folder beside it to /docs. Click Save.\nWait about two minutes, then visit https://USERNAME.github.io. GitHub documentation says this can take up to ten minutes.\n\n\n\n\nThe Pages settings, pointed at the docs folder."
+  },
+  {
+    "objectID": "guide.html#updating-your-site",
+    "href": "guide.html#updating-your-site",
+    "title": "Build Your First Academic Website",
+    "section": "16 Updating your site",
+    "text": "16 Updating your site\nTo update your site:\n\nEdit the .qmd file in RStudio. Save it.\nClick Build → Render Website.\nIn GitHub Desktop, write a short summary, click Commit to main, then click Push origin.\n\nThese updates will appear on your live site about two minutes later (but can take longer)."
+  },
+  {
+    "objectID": "guide.html#extension-your-own-web-address",
+    "href": "guide.html#extension-your-own-web-address",
+    "title": "Build Your First Academic Website",
+    "section": "17 Extension: your own web address",
+    "text": "17 Extension: your own web address\nUSERNAME.github.io is free and perfectly reasonable. A custom domain like johnasmith.com costs about $15 a year and looks a little more polished.\nChoosing the name. Your name makes the best address.\n\njohnasmith.com is the best.\njasmith.com, johnsmith.io, and jsmith.co are good also.\nSkip hyphens, digits, and anything that ties you to a place or a field. johnsmithfsupolitical.science is a poor choice.\n\nTry names in Domainr. It checks many related domain names at once and shows which ones are available. (But don’t buy it from Domainr.)\nBuying it. Search for the name on Namecheap, add it to the cart, and check out. A .com domain name costs about $10 the first year and about $15 a year after that. Accept the free WHOIS protection; decline the other add-ons.\nConnecting it.\n\nOn Namecheap, click Domain List → Manage → Advanced DNS.\n\nDelete any records already in the list. A new domain might have a www CNAME pointing at Namecheap’s parking page and a URL Redirect on @. Remove these; both conflict with the records below.\nAdd five records (i.e., the five that Namecheap’s own GitHub Pages guide describes):\n\n\n\n\n\nType\nHost\nValue\n\n\n\n\nA Record\n@\n185.199.108.153\n\n\nA Record\n@\n185.199.109.153\n\n\nA Record\n@\n185.199.110.153\n\n\nA Record\n@\n185.199.111.153\n\n\nCNAME Record\nwww\nUSERNAME.github.io\n\n\n\n\nIn the RStudio console, run writeLines(\"johnasmith.com\", \"CNAME\") (replace your own domain in the quotes). This creates a file named CNAME that has just the domain. Quarto copies it into docs/ on every render, which is how GitHub knows the domain belongs to this site. Render, commit, push.\nIn your repository on github.com, click Settings → Pages, type johnasmith.com into Custom domain, and click Save. GitHub checks your DNS records, which usually takes minutes but can take up to a day. When the check passes, check Enforce HTTPS. GitHub documentation says the box can take up to a day to become clickable. Once you check it, the certificate usually arrives within a few minutes. If it doesn’t, remove the custom domain, add it again, and click Save. (If GitHub Desktop offers Pull origin afterward, click it; GitHub sometimes adds a small commit of its own when you save the domain.)\n\nYour site is now live at the new address; the old USERNAME.github.io address keeps working as well."
+  }
+]
