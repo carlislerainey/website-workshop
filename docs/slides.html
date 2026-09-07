@@ -685,9 +685,12 @@ Carlisle Rainey
 <li>On Namecheap, click <strong>Domain List → Manage → Advanced DNS</strong>.
 <ol type="a">
 <li>Delete any records already in the list. A new domain might have a www CNAME pointing at Namecheap’s parking page and a URL Redirect on @. Remove these; both conflict with the records below.</li>
-<li>Add five records (i.e., the five that <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">Namecheap’s own GitHub Pages guide</a> describes):</li>
+<li>Add nine records. <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">Namecheap’s own GitHub Pages guide</a> describes the first five. The four <code>AAAA</code> records point the bare domain at GitHub over IPv6.</li>
 </ol></li>
 </ol>
+</section>
+<section id="extension-your-own-web-address-2" class="slide level2 smaller">
+<h2>Extension: your own web address</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -718,6 +721,26 @@ Carlisle Rainey
 <td><code>185.199.111.153</code></td>
 </tr>
 <tr class="odd">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8000::153</code></td>
+</tr>
+<tr class="even">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8001::153</code></td>
+</tr>
+<tr class="odd">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8002::153</code></td>
+</tr>
+<tr class="even">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8003::153</code></td>
+</tr>
+<tr class="odd">
 <td>CNAME Record</td>
 <td><code>www</code></td>
 <td><code>USERNAME.github.io</code></td>
@@ -725,7 +748,7 @@ Carlisle Rainey
 </tbody>
 </table>
 </section>
-<section id="extension-your-own-web-address-2" class="slide level2 smaller">
+<section id="extension-your-own-web-address-3" class="slide level2 smaller">
 <h2>Extension: your own web address</h2>
 <ol start="2" type="1">
 <li>In the RStudio console, run <code>writeLines("johnasmith.com", "CNAME")</code> (replace your own domain in the quotes). This creates a file named <code>CNAME</code> that has just the domain. Quarto copies it into <code>docs/</code> on every render, which is how GitHub knows the domain belongs to this site. Render, commit, push.</li>

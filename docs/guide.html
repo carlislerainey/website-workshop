@@ -131,6 +131,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Checklist</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./domains/domains.pdf"> 
+<span class="menu-text">Domains</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./slides.html"> 
 <span class="menu-text">Slides</span></a>
   </li>  
@@ -770,7 +774,7 @@ Important
 <li>On Namecheap, click <strong>Domain List → Manage → Advanced DNS</strong>.
 <ol type="a">
 <li>Delete any records already in the list. A new domain might have a www CNAME pointing at Namecheap’s parking page and a URL Redirect on @. Remove these; both conflict with the records below.</li>
-<li>Add five records (i.e., the five that <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">Namecheap’s own GitHub Pages guide</a> describes):</li>
+<li>Add nine records. <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">Namecheap’s own GitHub Pages guide</a> describes the first five. The four <code>AAAA</code> records point the bare domain at GitHub over IPv6.</li>
 </ol></li>
 </ol>
 <table class="caption-top table">
@@ -801,6 +805,26 @@ Important
 <td>A Record</td>
 <td><code>@</code></td>
 <td><code>185.199.111.153</code></td>
+</tr>
+<tr class="odd">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8000::153</code></td>
+</tr>
+<tr class="even">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8001::153</code></td>
+</tr>
+<tr class="odd">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8002::153</code></td>
+</tr>
+<tr class="even">
+<td>AAAA Record</td>
+<td><code>@</code></td>
+<td><code>2606:50c0:8003::153</code></td>
 </tr>
 <tr class="odd">
 <td>CNAME Record</td>

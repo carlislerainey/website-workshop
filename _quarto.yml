@@ -9,9 +9,14 @@ project:
     - copy-example.R
   resources:
     - checklist/checklist.pdf
+    - domains/domains.pdf
     - "!simple/"
     - "!inputs/"
     - "!tools/"
+    - "!domains/domains.md"
+    - "!domains/domains.typ"
+    - "!domains/template.typ"
+    - "!domains/Makefile"
 
 website:
   title: "Build Your First Academic Website"
@@ -22,6 +27,8 @@ website:
         file: guide.qmd
       - text: Checklist
         href: checklist/checklist.pdf
+      - text: Domains
+        href: domains/domains.pdf
       - text: Slides
         href: slides.html
       - text: Example

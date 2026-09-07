@@ -15,7 +15,7 @@ A workshop for PhD students.
 
 ### [The guide](guide.qmd)
 
-To follow during the workshop.
+Detailed steps follow during the workshop.
 :::
 
 ::: {.g-col-12 .g-col-md-6}
@@ -23,7 +23,7 @@ To follow during the workshop.
 
 ### [The checklist](checklist/checklist.pdf)
 
-One page. Print it and tick off the steps as you go.
+An abridged checklist.
 :::
 
 ::: {.g-col-12 .g-col-md-6}
@@ -31,7 +31,7 @@ One page. Print it and tick off the steps as you go.
 
 ### [The example site](example/)
 
-The site the guide builds. Click around.
+Example site that we'll start with.
 :::
 
 ::: {.g-col-12 .g-col-md-6}
@@ -40,6 +40,14 @@ The site the guide builds. Click around.
 ### [The slides](slides.html)
 
 To put on the screen during the workshop.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+[![](previews/domains.png){.preview-shot fig-alt="The first page of the domains guide, showing the title and the list of four addresses."}](domains/domains.pdf)
+
+### [Custom domains](domains/domains.pdf)
+
+Details on setting up a custom domain.
 :::
 
 :::

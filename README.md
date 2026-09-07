@@ -16,6 +16,11 @@ A workshop for PhD students.
 | **[The example site](https://www.carlislerainey.com/website-workshop/example/)** | **[The slides](https://www.carlislerainey.com/website-workshop/slides.html)** |
 | The site the guide builds. Click around. | To put on the screen during the workshop. |
 
+| [![The first page of the domains guide, showing the title and the list of four addresses.](previews/domains.png)](https://www.carlislerainey.com/website-workshop/domains/domains.pdf) | |
+|:---|:---|
+| **[Custom domains](https://www.carlislerainey.com/website-workshop/domains/domains.pdf)** | |
+| Two pages. For after the workshop, if you buy your own web address. | |
+
 ---
 
 **Issues.** If you find something here that is wrong, unclear, incomplete, or missing, [open an issue](https://github.com/carlislerainey/website-workshop/issues) on GitHub. I'd love ideas for improving the workshop, as well.

@@ -452,7 +452,7 @@ Try names in [Domainr](https://domainr.com/?q=). It checks many related domain n
 
 1. On Namecheap, click **Domain List → Manage → Advanced DNS**. 
    a. Delete any records already in the list. A new domain might have a www CNAME pointing at Namecheap's parking page and a URL Redirect on @. Remove these; both conflict with the records below. 
-   b. Add five records (i.e., the five that [Namecheap's own GitHub Pages guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/) describes):
+   b. Add nine records. [Namecheap's own GitHub Pages guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/) describes the first five. The four `AAAA` records point the bare domain at GitHub over IPv6.
 
 | Type | Host | Value |
 |---|---|---|
@@ -460,6 +460,10 @@ Try names in [Domainr](https://domainr.com/?q=). It checks many related domain n
 | A Record | `@` | `185.199.109.153` |
 | A Record | `@` | `185.199.110.153` |
 | A Record | `@` | `185.199.111.153` |
+| AAAA Record | `@` | `2606:50c0:8000::153` |
+| AAAA Record | `@` | `2606:50c0:8001::153` |
+| AAAA Record | `@` | `2606:50c0:8002::153` |
+| AAAA Record | `@` | `2606:50c0:8003::153` |
 | CNAME Record | `www` | `USERNAME.github.io` |
 
 2. In the RStudio console, run `writeLines("johnasmith.com", "CNAME")` (replace your own domain in the quotes). This creates a file named `CNAME` that has just the domain. Quarto copies it into `docs/` on every render, which is how GitHub knows the domain belongs to this site. Render, commit, push.
